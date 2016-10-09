@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">p5.js stuffs</h1>
+  <div id='myContainer'></div>
+  <p> The above is a direct copy of the second example from the 
+      <a href="https://p5js.org/get-started/">getting started page</a> for
+      p3.js.</p>
+
+  <script>
+    function setup() {
+      var myCanvas = createCanvas(600, 400);
+      myCanvas.parent('myContainer');
+    }
+
+    function draw() {
+      if (mouseIsPressed) {
+        fill(0);
+      } else {
+        fill(255);
+      }
+      ellipse(mouseX, mouseY, 80, 80);
+    }
+  </script>
+
+</div>
